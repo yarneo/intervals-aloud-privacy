@@ -24,7 +24,7 @@
 <p><strong>Intervals Aloud has no account, advertising or tracking.</strong>
 Your personal workout library, edits and completion history stay on your devices
 and, if enabled, your own iCloud account. Optional online video import sends a
-video link to our service and may use Google Gemini to build a routine. Source
+video link to our service and may use artificial intelligence providers to build a routine. Source
 routines can be reused across users. Custom voice generation sends the cue text
 and selected voice to our speech service.</p>
 
@@ -67,17 +67,17 @@ protect the service, under <a href="https://cloud.google.com/terms/cloud-privacy
 
 <h2>Online video import</h2>
 <p>Online import is optional. Before the first online import, we ask your
-permission to send the link to our service and use Google Gemini when needed.
+permission to send the link and its content to our service and artificial intelligence providers when needed. Our current AI provider is Google Gemini.
 You can withdraw this permission in Settings. Previously saved routines remain
 available.</p>
 <p>Our service runs on Google Cloud. It first looks for an existing source
 routine and usable description or chapter information. If more analysis is
-needed, it sends the public YouTube URL to Google Gemini. For supported TikTok
-and Instagram posts, our service may retrieve temporary video clips and send
-them to Gemini to read the exercise names and timing. It does not use your
-platform login or your personal cookies. The temporary clips are deleted when
-the request finishes. Pictures and saved videos you import directly are read
-on your device; those files are not uploaded by online link import.</p>
+needed, it sends the public YouTube URL to Google Gemini. Instagram and TikTok
+imports are currently unavailable: the service rejects these links before fetching
+or analyzing their media or returning a cached import. Availability is the same for
+all users. Previously saved routines remain on your device. Pictures and saved
+videos you import directly are read on your device; those files are not uploaded
+by online link import.</p>
 <p>We store extracted source plans, their source links, source evidence and
 cache timestamps in Google Cloud Firestore. These plans may be returned to other
 users importing the same video. They are retained for up to 30 days after a

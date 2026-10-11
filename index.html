@@ -18,13 +18,15 @@
 </head>
 <body>
 <h1>Privacy Policy</h1>
-<p class="sub">Intervals Aloud &middot; last updated 6 September 2026</p>
+<p class="sub">Intervals Aloud &middot; last updated 11 October 2026</p>
 
 <h2>The short version</h2>
-<p><strong>Intervals Aloud has no account, sign-in, analytics, advertising or
-tracking.</strong> We do not store your routines, history, health data, photos or
-videos. When a name needs a custom spoken cue, only that cue text and your chosen
-voice are sent to our speech service long enough to return the audio.</p>
+<p><strong>Intervals Aloud has no account, advertising or tracking.</strong>
+Your personal workout library, edits and completion history stay on your devices
+and, if enabled, your own iCloud account. Optional online video import sends a
+video link to our service and may use Google Gemini to build a routine. Source
+routines can be reused across users. Custom voice generation sends the cue text
+and selected voice to our speech service.</p>
 
 <h2>What stays on your device</h2>
 <ul>
@@ -63,17 +65,53 @@ Apple Watch. It is not generated again unless that local cache is removed. Googl
 Cloud processes basic request information such as an IP address to deliver and
 protect the service, under <a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud's privacy notice</a>.</p>
 
-<h2>Other network access</h2>
-<p>In builds that offer link or picture import, the source is opened or read on
-your device. Source media and captured frames are not sent to us. iCloud sync is
-described above. Prepared routines and the bundled voice vocabulary continue
-working without an internet connection.</p>
+<h2>Online video import</h2>
+<p>Online import is optional. Before the first online import, we ask your
+permission to send the link to our service and use Google Gemini when needed.
+You can withdraw this permission in Settings. Previously saved routines remain
+available.</p>
+<p>Our service runs on Google Cloud. It first looks for an existing source
+routine and usable description or chapter information. If more analysis is
+needed, it sends the public YouTube URL to Google Gemini. For supported TikTok
+and Instagram posts, our service may retrieve temporary video clips and send
+them to Gemini to read the exercise names and timing. It does not use your
+platform login or your personal cookies. The temporary clips are deleted when
+the request finishes. Pictures and saved videos you import directly are read
+on your device; those files are not uploaded by online link import.</p>
+<p>We store extracted source plans, their source links, source evidence and
+cache timestamps in Google Cloud Firestore. These plans may be returned to other
+users importing the same video. They are retained for up to 30 days after a
+successful refresh, plus any delay in automatic deletion, and may be refreshed
+or analyzed again. Your edits and chosen durations are not added to this shared
+source cache. When the source asks for a duration choice, your answer is sent to
+our service to assemble your draft for that request.</p>
+<p>We use Firebase App Check and App Attest to verify that requests come from the
+app. Google processes app installation identifiers, attestation information and
+basic network information such as IP addresses to operate and protect the
+service. Our services also retain operational logs and usage totals for
+reliability and spending limits. These are not used for advertising or tracking
+across other companies' apps.</p>
+<p>Gemini processing is subject to
+<a href="https://ai.google.dev/gemini-api/terms">Google's Gemini API terms</a>.
+Our analysis requests disable stored conversation history; this does not override
+Google's security and abuse monitoring retention. Google Cloud and Firebase
+processing is described in
+<a href="https://cloud.google.com/terms/cloud-privacy-notice">Google Cloud's privacy notice</a> and
+<a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
+
+<h2>Offline use</h2>
+<p>Prepared routines, previously generated voice cues and the bundled coach
+vocabulary work without an internet connection. New online link imports and new
+custom voice generation require a connection.</p>
 
 <h2>Children</h2>
 <p>The app has no account, advertising or tracking and does not knowingly collect
-personal information from children. Custom cue text is handled as described above.</p>
+personal information from children. Online import and custom cue text are handled as described above.</p>
 
 <h2>Deleting your data</h2>
+<p>To ask us to remove an imported source routine from our shared cache, contact
+us using the details below and include the source video link. Removing your app
+does not remove shared source routines requested by other users.</p>
 <p>Deleting the app removes its on-device history and cached audio. To remove
 workouts already written to Apple Health, use the Health app, which controls that
 data independently. To remove synced routine definitions, clear the app's iCloud
